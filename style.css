@@ -3,8 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .barra-nera {
@@ -47,7 +47,7 @@ body {
 .intro {
     max-width: 40%;
     margin: 0 auto 20px auto;
-    background: #ffffff;
+    background: #1a1a1a;
     padding: 15px 40px;
     ;
     border-radius: 20px;
@@ -56,7 +56,7 @@ body {
 }
 
 .intro h2 {
-    color: #1a1a1a;
+    color: #fff;
     margin-top: 5px;
     font-size: 1.8rem;
 }
