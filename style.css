@@ -99,3 +99,27 @@ body {
 .btn-itinerari:hover {
     background-color: #1b4332;
 }
+
+@media (max-width: 768px) {
+
+    .barra-nera {
+        max-width: 95%;
+        padding: 10px 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .intro {
+        max-width: 90%;
+        padding: 15px 20px;
+    }
+}
