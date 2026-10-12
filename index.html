@@ -29,7 +29,7 @@
     </section>
 
     <footer class="copyright">
-        <p>&copy; 2026 - Jacopo. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
     </footer>
 
     <script>
@@ -45,6 +45,8 @@
                 themeToggle.textContent = '🌙';
             }
         });
+
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
     </script>
 </body>
 
