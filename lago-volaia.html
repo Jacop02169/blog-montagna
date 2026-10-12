@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lago Volaia - Blog di Montagna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="barra-nera_2">
+        <a href="itinerari.html">← Itinerari</a>
+        <h1>Lago Volaia</h1>
+        <button id="theme-toggle" class="btn-theme">☀️</button>
+    </nav>
+
+    <footer class="copyright">
+        <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

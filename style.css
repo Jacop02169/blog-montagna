@@ -136,6 +136,7 @@ body {
 .btn-itinerari:hover {
     background-color: #1b4332;
 }
+
 .griglia-itinerari {
     max-width: 80%;
     margin: 30px auto;
@@ -173,7 +174,7 @@ body {
     opacity: 0.9;
 }
 
-.btn-scopri {
+.btn-percorso {
     display: inline-block;
     color: #fff;
     background-color: #39752d;
@@ -184,8 +185,44 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.card-itinerario-btn:hover .btn-scopri {
+.card-itinerario-btn:hover .btn-percorso {
     background-color: #1b4332;
+}
+
+.barra-nera_2 {
+    background-color: var(--nav-bg);
+    color: var(--text-color);
+    padding: 8px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s ease;
+}
+
+.barra-nera_2 a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+}
+
+.barra-nera_2 a:hover {
+    color: #4e9f3d;
+    transform: scale(1.5);
+}
+
+.barra-nera_2 h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin: 5px 5px;
 }
 
 @media (max-width: 768px) {
@@ -209,5 +246,17 @@ body {
     .intro {
         max-width: 90%;
         padding: 15px 20px;
+    }
+
+    .griglia-itinerari {
+        max-width: 90%;
+        gap: 15px;
+    }
+
+    .barra-nera_2 {
+        max-width: 95%;
+        padding: 10px 15px;
+        flex-direction: column;
+        text-align: center;
     }
 }
