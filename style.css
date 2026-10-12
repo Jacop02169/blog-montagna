@@ -9,8 +9,8 @@
 [data-theme="light"] {
     --bg-color: #f4f6f4;
     --text-color: #222222;
-    --nav-bg: #efefef;
-    --card-bg: #efefef;
+    --nav-bg: #dcdcdcb6;
+    --card-bg: #dcdcdcb6;
     --box-shadow: 6px 6px 5px rgba(79, 79, 79, 0.559);
 }
 
@@ -105,7 +105,7 @@ body {
     color: #666;
 }
 
-.btn-gps {
+.btn-gpx {
     display: inline-block;
     margin-top: 15px;
     color: #fff;
@@ -117,7 +117,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.btn-gps:hover {
+.btn-gpx:hover {
     background-color: #1b4332;
 }
 

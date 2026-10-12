@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPX - Blog di Montagna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="barra-nera">
+        <h1>🏔️ I Miei File GPX</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="itinerari.html">Itinerari</a>
+            <a href="gpx.html" class="active">GPX</a>
+            <button id="theme-toggle" class="btn-theme">☀️</button>
+        </div>
+    </nav>
+    <section class="griglia-gpx">
+    </section>
+
+    <footer class="copyright">
+        <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        });
+
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
