@@ -18,14 +18,23 @@
             <button id="theme-toggle" class="btn-theme">☀️</button>
         </div>
     </nav>
+
     <section class="griglia-itinerari">
+        <a href="lago-volaia.html" class="card-itinerario-btn">
+            <div class="card-contenuto">
+                <h2>Lago Volaia</h2>
+                <p><strong>Partenza:</strong> Collina (Forni Avoltri)</p>
+                <span class="btn-scopri">Scopri il percorso &rarr;</span>
+            </div>
+        </a>
     </section>
 
     <footer class="copyright">
         <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
     </footer>
 
-    <script src="theme.js">
+    <script src="theme.js"></script>
+    <script>
         document.getElementById('copyright-year').textContent = new Date().getFullYear();
     </script>
 </body>

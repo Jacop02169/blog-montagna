@@ -136,6 +136,57 @@ body {
 .btn-itinerari:hover {
     background-color: #1b4332;
 }
+.griglia-itinerari {
+    max-width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card-itinerario-btn {
+    display: block;
+    background: var(--card-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    border-left: 6px solid #4e9f3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-itinerario-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-contenuto h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.card-contenuto p {
+    margin: 5px 0 15px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.btn-scopri {
+    display: inline-block;
+    color: #fff;
+    background-color: #39752d;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-itinerario-btn:hover .btn-scopri {
+    background-color: #1b4332;
+}
 
 @media (max-width: 768px) {
 
