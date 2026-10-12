@@ -16,6 +16,7 @@
             <a href="index.html" class="active">Home</a>
             <a href="itinerari.html">Itinerari</a>
             <a href="gps.html">GPS</a>
+            <button id="theme-toggle" class="btn-theme">☀️</button>
         </div>
     </nav>
 
@@ -31,6 +32,20 @@
         <p>&copy; 2026 - Jacopo. All rights reserved.</p>
     </footer>
 
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        });
+    </script>
 </body>
 
 </html>
