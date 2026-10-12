@@ -25,20 +25,7 @@
         <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
     </footer>
 
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        themeToggle.addEventListener('click', () => {
-            if (body.getAttribute('data-theme') === 'light') {
-                body.removeAttribute('data-theme');
-                themeToggle.textContent = '☀️';
-            } else {
-                body.setAttribute('data-theme', 'light');
-                themeToggle.textContent = '🌙';
-            }
-        });
-
+    <script src="theme.js">
         document.getElementById('copyright-year').textContent = new Date().getFullYear();
     </script>
 </body>
