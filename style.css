@@ -286,4 +286,13 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .immagine-principale {
+        max-width: 98%;
+    }
+
+    .descrizione {
+        max-width: 95%;
+        padding: 15px 20px;
+    }
 }
