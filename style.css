@@ -304,4 +304,9 @@ body {
         max-width: 95%;
         padding: 15px 20px;
     }
+
+    #mappa-gpx {
+        width: 95%;
+        height: 400px;
+    }
 }
