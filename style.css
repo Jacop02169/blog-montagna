@@ -252,6 +252,15 @@ body {
     font-size: 1rem;
 }
 
+#mappa-gpx {
+    width: 84%;
+    height: 600px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+}
+
 @media (max-width: 768px) {
 
     .barra-nera {

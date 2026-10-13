@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lago Volaia - Blog di Montagna</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -22,6 +23,12 @@
         <p>Il Lago Volaia è una meta ideale per chi cerca un'esperienza immersiva nella natura alpina, con la
             possibilità di godere di paesaggi unici e momenti di relax lontano dal trambusto della vita quotidiana.</p>
     </div>
+
+    <div id="mappa-gpx" data-gpx="lago-volaia_1.gpx"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <script src="mappa.js"></script>
 
     <footer class="copyright">
         <p>&copy; <span id="copyright-year"></span> - Jacopo. All rights reserved.</p>
