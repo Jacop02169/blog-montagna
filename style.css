@@ -225,6 +225,33 @@ body {
     margin: 5px 5px;
 }
 
+.immagine-principale {
+    display: block;
+    max-width: 83%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.descrizione {
+    max-width: 79%;
+    margin: 0 auto 20px auto;
+    background: var(--card-bg);
+    padding: 15px 40px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    border-left: 6px solid #4e9f3d;
+    transition: background-color 0.3s ease;
+}
+
+.descrizione p {
+    color: var(--text-color);
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
 
     .barra-nera {
